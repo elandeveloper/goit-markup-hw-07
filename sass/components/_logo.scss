@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 26px;
+  line-height: 31px;
+
+  &-web {
+    color: $accent-color;
+  }
+
+  &-studio {
+    color: $title-text-color;
+  }
+}

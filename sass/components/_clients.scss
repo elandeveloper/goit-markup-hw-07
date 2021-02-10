@@ -1,0 +1,30 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-link:hover,
+  &-link:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}

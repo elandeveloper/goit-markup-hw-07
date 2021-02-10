@@ -1,0 +1,290 @@
+/*Стили 
+Блок преимуществ
+Примеры работ
+Список сотрудников
+Лучшие работы студии
+*/
+.examples {
+  padding-bottom: 94px;
+}
+
+.examples-section-title,
+.team-title,
+.advantages-title,
+.team-member,
+.works-title,
+.clients-title {
+  color: $title-text-color;
+}
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-item {
+  width: 270px;
+}
+
+.advantages-list {
+  justify-content: space-between;
+}
+
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  background-color: $add-background-color;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.examples-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.examples-section-title,
+.team-title,
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-item {
+  background-color: $main-background-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 4px 4px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-item:hover,
+.team-item:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.network-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-link:hover,
+.network-link:focus {
+  fill: $main-background-color;
+  background-color: $accent-color;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.works-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - 60px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.works-link {
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.advantages-content,
+.team-content,
+.works-content {
+  color: $primary-text-color;
+}
+
+.advantages-content {
+  padding: 0;
+  margin: 0;
+
+  font-style: normal;
+  font-weight: $normal-font-weight;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.team-content {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: $normal-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+.team {
+  background-color: $add-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-content {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: $normal-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.87;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.works-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* Установит стили правой рамки */
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  /* Установит стили левой рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+
+.examples-item {
+  position: relative;
+}
+
+.examples-title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white-text-color;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* OVERLAY */
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-link:hover .overlay,
+.works-link:focus .overlay {
+  transform: translatey(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: $accent-color;
+  opacity: 90%;
+
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: $white-text-color;
+
+  display: block;
+  padding: 63px 24px;
+}
